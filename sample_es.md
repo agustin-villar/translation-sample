@@ -14,7 +14,7 @@ Para solicitar y obtener recursos, use el mêtodo `fetch()`. Este está implemen
 
 El método `fetch()` recibe un argumento obligatorio, la dirección del recurso que se quiera obtener. Devuelve un objeto de tipo `Promise` que resuelve con el objeto `Response` de dicha solicitud — tan pronto como el servidor responda — **aún si la respuesta del servidor es un estado de error *HTTP***.
 
-También puede pasar como segundo argumento un objeto con opciones `init` (ver `Request`).
+También se puede pasar como segundo argumento un objeto con opciones `init` (ver `Request`).
 
 Una vez se haya obtenido un objeto `Response`, hay una serie de métodos disponibles para definir el cuerpo del contenido y como debe ser manejado.
 
