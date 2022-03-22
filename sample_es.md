@@ -12,7 +12,7 @@ También define conceptos relacionados tales como *CORS* y la semántica de las 
 
 Para solicitar y obtener recursos, use el mêtodo `fetch()`. Este está implementado en múltiples interfaces, específicamente `Window` y `WorkerGlobalScope`. Lo que lo asegura su disponibilidad prácticamente en cualquier contexto en el que se requiera obtener recursos.
 
-El método `fetch()` recibe un argumento obligatorio, la dirección del recurso que se quiera obtener. Devuelve un objeto de tipo `Promise` que resuelve como el objeto `Response` de dicha solicitud — tan pronto como el servidor responda — **aún si la respuesta del servidor es un estado de error *HTTP***.
+El método `fetch()` recibe un argumento obligatorio, la dirección del recurso que se quiera obtener. Devuelve un objeto de tipo `Promise` que resuelve con el objeto `Response` de dicha solicitud — tan pronto como el servidor responda — **aún si la respuesta del servidor es un estado de error *HTTP***.
 
 También puede pasar como segundo argumento un objeto con opciones `init` (ver `Request`).
 
