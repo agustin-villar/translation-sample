@@ -30,7 +30,7 @@ La especificación de la API `fetch` difiere de `jQuery.ajax()` en dos aspectos 
 
   - En abril de 2018, la especificación cambio la política de credenciales por defecto a *'same-origin'*. Los siguientes navegadores lanzaron una versión nativa desactualizada de la API `fetch` que fue actualizada en estas versiones: Firefox 61.0b13, Safari 12, Chrome 68.
   
-  - Si usted está trabajando para versiones antiguas de estos navegadores, asegúrese de incluir `credentiasl: 'same-origin'` como opción dentro del argumento `init` en todos las solicitudes que puedan ser afectadas por `cookies/user login state`.
+  - Si usted está trabajando para versiones antiguas de estos navegadores, asegúrese de incluir `credentiasl: 'same-origin'` como opción dentro del argumento `init` en todos las solicitudes que puedan ser afectadas por el estado de una sesión de usuario o *cookies*.
 
 > Nota: Encuentre más información acerca de las funcionalidaes de la *Fetch API* en "Usando la *Fetch API*", y estudie los conceptos básicos en "Conceptos básicos de la *Fetch API*".
 
