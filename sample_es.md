@@ -6,11 +6,11 @@ La *Fetch API* proporciona una interfaz para obtener recursos en linea(incluso a
 
 ## Uso y conceptos
 
-*Fetch* proporciona definiciones génericas de los objetos `Request` y `Response` (además de otros aspectos relacionados con solicitudes de recursos a través de redes). Esto permitirá que sean utilizados donde sea que se necesiten, bien sea en *Service Workers*, *Cache API*, y otras funcionalidades similares que manejen o modifiquen solicitudes y respuestas de recursos, o cualquier otro caso de uso que requiera que se generen respuestas de forma prográmatica (es decir, a través de un programa de computación o de instructiones de programación personales).
+*Fetch* proporciona definiciones génericas de los objetos `Request` y `Response` (además de otras funcionalidades relacionadas con la solicitud de recursos a través de redes). Esto permitirá que sean utilizados donde sea que se necesiten, bien sea en *Service Workers*, *Cache API*, y otras funcionalidades similares que manejen o modifiquen solicitudes y respuestas de recursos, o cualquier otro caso de uso que requiera que se generen respuestas de forma prográmatica (es decir, a través de un programa de computación o de instructiones de programación personales).
 
 También define conceptos relacionados tales como *CORS* y la semántica de las cabeceras de origen *HTTP*, supliendo sus definiciones específicas en cualquier otro contexto.
 
-Para solicitar y obtener recursos, use el mêtodo `fetch()`. Este está implementado en múltiples interfaces, específicamente `Window` y `WorkerGlobalScope`. Lo que lo asegura su disponibilidad prácticamente en cualquier contexto en el que se requiera obtener recursos.
+Para solicitar y obtener recursos, se usa el método `fetch()`. Este está implementado en múltiples interfaces, específicamente `Window` y `WorkerGlobalScope`. Lo que lo asegura su disponibilidad prácticamente en cualquier contexto en el que se requiera obtener recursos.
 
 El método `fetch()` recibe un argumento obligatorio, la dirección del recurso que se quiera obtener. Devuelve un objeto de tipo `Promise` que resuelve con el objeto `Response` de dicha solicitud — tan pronto como el servidor responda — **aún si la respuesta del servidor es un estado de error *HTTP***.
 
@@ -18,7 +18,7 @@ También se puede pasar como segundo argumento un objeto con opciones `init` (ve
 
 Una vez se haya obtenido un objeto `Response`, hay una serie de métodos disponibles para definir el cuerpo del contenido y como debe ser manejado.
 
-Usted puede crear objetos de tipo `Request` and `Response` directamente utilizando los constructores `Request()` y `Response()`, sin embargo no es muy común hacerlo de esta manera. Lo más probable es que estos sean generados a tráves de funcionalidades de otras *API* (por ejemplo, `FetchEvent.respondWith()` de *Service Workers*).
+También se pueden crear objetos de tipo `Request` and `Response` directamente utilizando los constructores `Request()` y `Response()`, sin embargo no es muy común hacerlo de esta forma. Lo más común es que estos sean generados a tráves de funcionalidades de otras *API* (por ejemplo, `FetchEvent.respondWith()` de *Service Workers*).
 
 ### Diferencias con jQuery
 
